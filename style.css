@@ -1209,8 +1209,9 @@ u1 li:hover:nth-child(4) a:after {
 }
 
 .modal:target {
+    position:absolute;
     visibility: visible;
-    z-index:auto;
+    z-index:50;
 }
 
 .modal__content {
