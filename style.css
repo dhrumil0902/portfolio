@@ -1210,6 +1210,7 @@ u1 li:hover:nth-child(4) a:after {
 
 .modal:target {
     position:absolute;
+    opacity: 0;
     visibility: visible;
     z-index:50;
 }
