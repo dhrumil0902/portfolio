@@ -7,7 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -29,6 +30,7 @@
 
 
                         <!--<li><a href="#hero" data-after="Home">Home</a></li>-->
+                        <li><a href="resume.pdf" target="_blank" data-after="Engineering Design Handbook ">Resume</a></li>
                         <li><a href="handbook.pdf" target="_blank" data-after="Engineering Design Handbook ">Handbook</a></li>
                         <li><a href="#projects" data-after="Projects">Projects</a></li>
                         <li><a href="#achieve" data-after="About">Achievements</a></li>
@@ -51,31 +53,27 @@
                 <a href="#about" type="button" class="cta">About me</a>
             </div>
 
-            <u1>
-                <li>
-                    <a href="https://www.linkedin.com/in/dhrumil-patel-613768202/" target="_blank">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span>  <strong>Linkedin</strong></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/dhrumil0902" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span>  <strong>Github</strong></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto: dhrumilpatel09@hotmail.com">
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                        <span>  <strong>Email</strong></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="resume.pdf" target="_blank">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span>  <strong>Resume</strong></span>
-                    </a>
-                </li>
+
+
+
+
+            <div class="ba">
+                <um>
+
+                    <li>
+                        <a style="color:white" href="https://github.com/dhrumil0902"><i class="fa fa-github "> </i> </a>
+                    </li>
+
+
+                    <li> <a style="color:white" href="https://www.linkedin.com/in/dhrumil-patel-613768202/"><i class="fa fa-linkedin "></i></a></li>
+
+                    <li>
+                        <a style="color:white" href="mailto: dhrumilpatel09@hotmail.com"><i class="fa fa-envelope "></i></a></li>
+                </um>
+
+
+
+            </div>
 
         </div>
     </section>
@@ -296,30 +294,30 @@
             <input type="hidden" name="_next" value="https://dhrumil0902.github.io/portfolio/#myModal">
             <button type="submit" class="btn2">Send Message</button>
         </form>
-        
-<div id="demo-modal" class="modal">
-    <div class="modal__content">
-        <h1>CSS Only Modal</h1>
 
-        <p>
-            You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
-        </p>
+        <div id="demo-modal" class="modal">
+            <div class="modal__content">
+                <h1>CSS Only Modal</h1>
 
-        <a href="#" class="modal__close">&times;</a>
+                <p>
+                    You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+                </p>
+
+                <a href="#" class="modal__close">&times;</a>
+            </div>
+
+        </div>
+
     </div>
-    
-</div>
-       
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
     </div>
-         <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
 
 
     <!-- Footer -->
@@ -340,7 +338,7 @@
     </section>
     <!-- End Footer -->
     <script src="./app.js"></script>
-   
+
 
 </body>
 

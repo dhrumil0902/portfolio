@@ -818,189 +818,6 @@ p {
     }
 }
 
-
-/* End  Media Query For Desktop */
-
-
-/*
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: green;
-}
-
-.fa-twitter {
-    background: green;
-    color: blue;
-}
-*/
-
-b {
-    margin: 0;
-    padding: 0;
-    background: #ccc;
-    z-index: 9;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-u1 {
-    display: inline-flex;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    margin: 0;
-    padding: 0;
-    border-color: solid grey;
-    z-index: 9;
-}
-
-u1 li {
-    list-style: none;
-    margin: 0 5px;
-    border-color: solid grey;
-    z-index: 9;
-}
-
-u1 li a .fa {
-    font-size: 40px;
-    color: #262626;
-    line-height: 80px;
-    transition: .5s;
-    padding-right: 14px;
-    z-index: 9;
-}
-
-u1 li a span {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 30px;
-    color: #262626;
-    letter-spacing: 4px;
-    transition: .5s;
-    border-color: solid grey;
-    z-index: 9;
-}
-
-u1 li a {
-    text-decoration: none;
-    display: absolute;
-    display: block;
-    width: 210px;
-    height: 80px;
-    background: #fff;
-    border-color: solid grey;
-    text-align: left;
-    padding-left: 20px;
-    transform: rotate(-25deg) skew(25deg) translate(0, 0);
-    /*change ortation of blocks*/
-    transition: .5s;
-    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
-    z-index: 9;
-}
-
-u1 li a:before {
-    content: '';
-    border-color: solid grey;
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    height: 100%;
-    width: 20px;
-    background: #b1b1b1;
-    transform: .5s;
-    transform: rotate(0deg) skewY(-45deg);
-    z-index: 9;
-}
-
-u1 li a:after {
-    content: '';
-    border-color: solid grey;
-    position: absolute;
-    bottom: -20px;
-    left: -10px;
-    height: 20px;
-    width: 100%;
-    background: #b1b1b1;
-    transform: .5s;
-    transform: rotate(0deg) skewX(-45deg);
-    z-index: 9;
-}
-
-u1 li a:hover {
-    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
-}
-
-u1 li:hover .fa {
-    color: black
-}
-
-u1 li:hover span {
-    color: black
-}
-
-u1 li:hover:nth-child(1) a {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(1) a:before {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(1) a:after {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(2) a {
-    background: rgb(25, 68, 112);
-    z-index: 9;
-}
-
-u1 li:hover:nth-child(2) a:before {
-    background: rgb(25, 68, 112);
-    z-index: 9;
-}
-
-u1 li:hover:nth-child(2) a:after {
-    background: rgb(25, 68, 112);
-    z-index: 9;
-}
-
-u1 li:hover:nth-child(3) a {
-    background: rgb(25, 68, 112);
-    z-index: 9;
-}
-
-u1 li:hover:nth-child(3) a:before {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(3) a:after {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(4) a {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(4) a:before {
-    background: rgb(25, 68, 112);
-}
-
-u1 li:hover:nth-child(4) a:after {
-    background: rgb(25, 68, 112);
-}
-
 .container2 {
     max-width: 900px;
     height: 600px;
@@ -1170,40 +987,133 @@ u1 li:hover:nth-child(4) a:after {
     }
 }
 
+.wrapper {
+    height: 100vh;
+    /* This part is important for centering the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* End center */
+    background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
+    background: linear-gradient(to right, #834d9b, #d04ed6);
+}
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+    font-family: 'Roboto', sans-serif;
+}
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+.modal:target {
+    position: absolute;
+    visibility: visible;
+    z-index: 10;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal__content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
 }
+
+.ba {
+    display: flex;
+    position: absolute;
+    margin-bottom: -300px;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+um {
+    display: flex;
+}
+
+um li {
+    float: left;
+    display: block;
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+um li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+}
+
+um li:nth-child(1):hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+um li:nth-child(2):hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+um li:nth-child(3):hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+um li:nth-child(4):hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+um li:nth-child(5):hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+
+/* End  Media Query For Desktop */
