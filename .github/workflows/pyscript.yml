@@ -27,4 +27,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Run a Python script
-      run: python .github/workflows/script.py
+      run: PYTHON .github/workflows/script.py
