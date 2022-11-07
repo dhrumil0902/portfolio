@@ -3,7 +3,6 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
-    
 </style>
 
 <head>
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
-   
+
 </head>
 
 <body>
@@ -85,7 +84,7 @@
 
     <!-- About Section -->
     <section id="about">
-        
+
         <div class="about container">
             <div class="col-left">
                 <div class="about-img">
@@ -96,7 +95,7 @@
                 <h1 class="section-title">About Me <span></span></h1>
                 <h2>Computer Engineering Student</h2>
                 <p><strong>HI! Welcome to my personal website. I am a CE + PEY 2T4 student studying at University of Toronto, who is passionate about hardware and software engineering.
-                    On my spare time, I like to hangout with my friends (currently virtually) &#128542, cycling &#128690, hiking 🥾 , scrolling through twitter, playing cricket and volleyball &#127952. Currently, I am looking for a co-op placement this summer related to software engineering and IT to expand my skills and gain experience. If you are a recruiter, please feel free to download my resume &#128071. If you are a university student
+                    I recently finished a co-op placement at FGF Brands on the IT Security team. On my spare time, I like to hangout with my friends, cycling &#128690, hiking 🥾 , scrolling through twitter, playing cricket and volleyball &#127952. Currently, I am looking for a co-op placement this summer related to software engineering and IT to expand my skills and gain experience. If you are a recruiter, please feel free to download my resume &#128071. If you are a university student
                     or incoming university student I am more than willing to share my experience and help you out. Thank you for taking the time to explore my website. &#128591 
                 </strong> </p>
                 <a href="resume.pdf" target="_blank" class="cta">Download Resume</a>
@@ -109,74 +108,121 @@
         <div class="projects container">
             <div class="projects-header">
                 <h1 class="section-title">Recent Projects <span></span></h1>
+
+                <div class="all-projects">
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Stock Info App</h1>
+                            <h2>Access real-time data and other information regarding a ticker (Streamlit Python)</h2>
+                            <p>See information related to a ticker, such as current price, 52-week high, price-time graph and the latest tweets/discussions about the ticker on Twitter and Reddit. All the information of the ticker was extracted from Yahoo
+                                Finance. Twitter and Reddit apis were used to extract relevent tweets and subreddit threads.</p>
+                            <a href="https://github.com/dhrumil0902/stocks-app">
+                                <h3>Click Here For More Info/Code</h3>
+                            </a>
+
+                        </div>
+                        <div class="project-img">
+                            <img src="stock2.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Mapping System </h1>
+                            <h2>Mock Google Maps (C++) </h2>
+                            <p>Built a Geogrpahic Information System (GIS) for different cities using OpenStreatMaps API and EZGL graphics library. Provided functionalies such as finding directions, locating restaurants, parks, hospitals and other points
+                                of interest. Appplied A* algortihm to find fastest route between two points under 150 ms.</p>
+                            <a href="https://github.com/dhrumil0902/stocks-app">
+                                <h3>Click Here For More Info/Code</h3>
+                            </a>
+
+                        </div>
+                        <div class="project-img">
+                            <img src="mappic.gif" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Whac-A-Alien</h1>
+                            <h2>Inspired by the Whac-A-Mole game (Developed in C & implemented on DE1-Soc board using VGA display)-</h2>
+                            <p>This game involves moving a hammer with keybaord keys and pressing space to attack an alien. Your score is dependent on the number of aliens you hit before the time runs out. This game was built from scratch, and applies concepts
+                                such as keyboard interrupts, timer interrupts, graphics animation and double buffering. This was done as a project for ECE243 - Computer Organization. All the pixels you see on the right were drawn "manually", or an image
+                                was converted to pixels to be drawn.
+                            </p>
+                            <a href="https://github.com/dhrumil0902/whac-a-alien">
+                                <h3>Click Here For More Info/Code</h3>
+                            </a>
+
+                        </div>
+                        <div class="project-img">
+                            <img src="hammer.gif" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Seam Carving</h1>
+                            <h2>Resizing image based on content-awareness (Python & C)</h2>
+                            <p>Seam-carving is a content-aware image resizing technique where the image is reduced in size by one pixel of width (or height) at a time. A vertical seam in an image is a path of pixels connected from the top to the bottom with
+                                one pixel in each row; a horizontal seam is a path of pixels connected from the left to the right with one pixel in each column. Unlike cropping and scaling a photo, seam carving preserves important features such as aspect
+                                ratio and set of objects present. Essentially it takes out the "unimportant" parts of a photo. The gif on the right continues to remove the less important seams, leaving the humans till the end.</p>
+                            <a href="https://github.com/dhrumil0902/seamcarving">
+                                <h3>Click Here For More Info/Code</h3>
+                            </a>
+
+                        </div>
+                        <div class="project-img">
+                            <img src="seamcarve2.PNG" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Gomoku</h1>
+                            <h2>Computer vs Human Game (Python)</h2>
+                            <p>This is a standard game of Gomoku on a 8 by 8 board. The first player(computer or human) to have exactly 5 of thier chips ligned side by side wins. The computer is programmed to block the human from having 5 in a row chips.
+                                The game is ready to play. Try it yourself by running gomoku.py, and enetering your coordinates!</p>
+                            <a href="https://github.com/dhrumil0902/gomoku_game">
+                                <h3>Click Here For More Info/Code</h3>
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="gomoku.PNG" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Autocomplete</h1>
+                            <h2>Completes a word given a string of initial letters ( C )</h2>
+
+                            <p>Completes a given substring (partial word) based on relevance in the English language. For example, if the inputted substring is "th", the outputed string will be "the", as it is the most used word in english starting with
+                                "th". The worst case time complexity at most is log(10 000), as there are 10 000 words stored in the file stored in lexogrpahic order, and the searching algorithm is binary search.</p>
+                            <a href="https://github.com/dhrumil0902/autocomplete">
+                                <h3>Click Here For More Info/Code</h3>
+                            </a>
+
+                        </div>
+
+                        <div class="project-img">
+                            <img src="autocomplete.PNG" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Zip Assist</h1>
+                            <h2>Zipper Assistance Device for Individuals with Fine Motor Disabilities (Group Project)
+                            </h2>
+                            <p>My team and I created a two part design involving an aid for the alignment of the zipper, and an enlarged tab to pull it up. Our design philosophy was to make the design simple to look and aestheitcally pleasing, since our
+                                target audience was kids. We 3D printed our model to test,evaluate and validate our design.(Team:John Wolf, Riddhiman Roy, Liam Bessey) </p>
+                            <a href="zipassist.pdf" target="_blank">
+                                <h3>Click Here To View InfoGraph</h3>
+                            </a>
+
+                        </div>
+                        <div class="project-img">
+                            <img src="testr.png" alt="img">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Seam Carving</h1>
-                        <h2>Resizing image based on content-awareness using dynamic programming (Python & C)</h2>
-                        <p>Seam-carving is a content-aware image resizing technique where the image is reduced in size by one pixel of width (or height) at a time. A vertical seam in an image is a path of pixels connected from the top to the bottom with
-                            one pixel in each row; a horizontal seam is a path of pixels connected from the left to the right with one pixel in each column. Unlike cropping and scaling a photo, seam carving preserves important features such as aspect
-                            ratio and set of objects present. Essentially it takes out the "unimportant" parts of a photo. The gif on the right continues to remove the less important seams, leaving the humans till the end.</p>
-                        <a href="https://github.com/dhrumil0902/seamcarving">
-                            <h3>Click Here For More Info/Code</h3>
-                        </a>
-
-                    </div>
-                    <div class="project-img">
-                        <img src="seamcarve2.PNG" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Gomoku</h1>
-                        <h2>Computer vs Human Game (Python)</h2>
-                        <p>This is a standard game of Gomoku on a 8 by 8 board. The first player(computer or human) to have exactly 5 of thier chips ligned side by side wins. The computer is programmed to block the human from having 5 in a row chips. The
-                            game is ready to play. Try it yourself by running gomoku.py, and enetering your coordinates!</p>
-                        <a href="https://github.com/dhrumil0902/gomoku_game">
-                            <h3>Click Here For More Info/Code</h3>
-                        </a>
-                    </div>
-                    <div class="project-img">
-                        <img src="gomoku.PNG" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Autocomplete</h1>
-                        <h2>Completes a word given a string of initial letters ( C )</h2>
-
-                        <p>Completes a given substring (partial word) based on relevance in the English language. For example, if the inputted substring is "th", the outputed string will be "the", as it is the most used word in english starting with "th".
-                            The worst case time complexity at most is log(10 000), as there are 10 000 words stored in the file stored in lexogrpahic order, and the searching algorithm is binary search.</p>
-                        <a href="https://github.com/dhrumil0902/autocomplete">
-                            <h3>Click Here For More Info/Code</h3>
-                        </a>
-
-                    </div>
-
-                    <div class="project-img">
-                        <img src="autocomplete.PNG" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Zip Assist</h1>
-                        <h2>Zipper Assistance Device for Individuals with Fine Motor Disabilities (Group Project)
-                        </h2>
-                        <p>My team and I created a two part design involving an aid for the alignment of the zipper, and an enlarged tab to pull it up. Our design philosophy was to make the design simple to look and aestheitcally pleasing, since our target
-                            audience was kids. We 3D printed our model to test,evaluate and validate our design.(Team:John Wolf, Riddhiman Roy, Liam Bessey) </p>
-                        <a href="zipassist.pdf" target="_blank">
-                            <h3>Click Here To View InfoGraph</h3>
-                        </a>
-
-                    </div>
-                    <div class="project-img">
-                        <img src="testr.png" alt="img">
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </section>
     <!-- End Projects Section -->
     <!-- Service Section -->
@@ -308,28 +354,26 @@
         </div>
 
     </div>
-    <div id="excel" style="display: none;"
-         <py-script> print('Now you can!') </py-script>|
-    >
+    <div id="excel" style="display: none;" <py-script> print('Now you can!') </py-script>| >
 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand">
-                <h1><span></span>Thank You <span></span>For Visiting!</h1>
-            </div>
-            <h2></h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="#"><img src="sig2.png" /></a>
+        <!-- Footer -->
+        <section id="footer">
+            <div class="footer container">
+                <div class="brand">
+                    <h1><span></span>Thank You <span></span>For Visiting!</h1>
                 </div>
+                <h2></h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="sig2.png" /></a>
+                    </div>
 
+                </div>
+                <p></p>
             </div>
-            <p></p>
-        </div>
-    </section>
-    <!-- End Footer -->
-    <script src="./app.js"></script>
+        </section>
+        <!-- End Footer -->
+        <script src="./app.js"></script>
 
 
 </body>
