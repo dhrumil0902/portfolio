@@ -474,22 +474,22 @@ p {
 #about .about {
     flex-direction: column-reverse;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 100px 30px;
+    padding: 80px 30px;
 }
 
 #about .col-left {
-    width: 240px;
+    width: 400px;
     height: 360px;
 }
 
 #about .col-left:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 #about .col-right {
-    width: 80%;
+    width: 70%;
 }
 
 #about .col-right h2 {
@@ -1056,6 +1056,35 @@ p {
     align-items: center;
     justify-content: center;
     background: transparent;
+}
+
+.chess-section {
+    margin-top: 20px;
+    margin-right: 0px;
+    text-align: center;
+    /* Align the text to the right */
+}
+
+.chess-section h3 {
+    font-size: 2.0em;
+    font-weight: 600;
+    color: #0072b1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chess-section a {
+    color: #4fd951;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chess-section a:hover {
+    text-decoration: underline;
 }
 
 um {
