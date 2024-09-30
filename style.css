@@ -723,8 +723,11 @@ p {
         height: 100%;
     }
     #projects .all-projects .project-img {
-        height: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain; 
     }
+    
     /* End Project */
     /* About */
     #about .about {
